@@ -8,12 +8,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView// Wrap the component name in curly braces
+      component: HomeView
     },
     {
       path: '/agent-select',
       name: 'agent-select',
-      component: AgentSelectView  // Wrap the component name in curly braces
+      component: AgentSelectView  
     },
   ]
 })

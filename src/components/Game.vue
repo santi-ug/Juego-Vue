@@ -1,5 +1,6 @@
 <script setup>
 import axios from "axios";
+import Loading from "./Loading.vue";
 import { ref } from "vue";
 
 const pokemons = ref([]);
@@ -123,7 +124,9 @@ fetchPokemons().then(() => {
         </button>
         <div class="players">
             <div class="player">
-                <div class="loading" v-if="loading">Loading...</div>
+                <div class="loading" v-if="loading">
+                    <Loading />
+                </div>
                 <div v-else>
                     <h1>Player 1 Pick</h1>
                     <div v-if="p1selection">
@@ -148,7 +151,9 @@ fetchPokemons().then(() => {
               </div>
             </div>
             <div class="player">
-                <div class="loading" v-if="loading">Loading...</div>
+                <div class="loading" v-if="loading">
+                    <Loading />
+                </div>
                 <div v-else>
                     <h1>Player 2 Pick</h1>
                     <div v-if="p2selection">
