@@ -3,6 +3,6 @@
 
 <template>
   <main>
-    <div>hi</div>
+    <div>Pokemon Battles</div>
   </main>
 </template>
